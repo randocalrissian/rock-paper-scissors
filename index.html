@@ -3,6 +3,7 @@
 <head>
 	<title>Rock, Paper, Scissors Game</title>
 	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
@@ -20,8 +21,9 @@
 		<button id="scissors"><p class="button left">Scissors</p><p class="button right"><i class="fas fa-1x fa-hand-scissors"></i></p></button>
 	</div>
 	<div id="restart" style="display:none;">
-		<span id="computerwins" style="display:none;"><img src="images/computerwins.gif" alt="Terminator stepping on human skulls"><br /></span>
-		<span id="playerwins" style="display:none;"><img src="images/playerwins.gif" alt=""><br /></span>
+		<div id="computerwins" style="display:none;"><img src="images/computerwins.gif" alt="Terminator stepping on human skulls"><br /></div>
+		<div id="playerwins" style="display:none;"><img src="images/playerwins.gif" alt="Robot getting beat up"><br /></div>
+
 		<button id="playagain"><p class="button left">Play Again</p><p class="button right"><i class="fas fa-1x fa-play"></i></p></button>
 	</div>
 	<div id="scores">
