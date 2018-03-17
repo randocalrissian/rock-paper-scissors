@@ -75,9 +75,11 @@ function scoreCheck() {
 		if (computerScore >= 5) {
 			gameLog = gameLog + ' Computer WINS!';
 			toggleButtons();
+			computerWinsGif();
 		} else if (playerScore >= 5) {
 			gameLog = gameLog + ' You WIN!';
 			toggleButtons();
+			playerWinsGif();
 		}
 	}
 	displayGameLog.textContent = gameLog;
@@ -92,6 +94,14 @@ function toggleButtons() {
 		playAgainToggle.style.display = "none";
 		controlsToggle.style.display = "inline";
 	}
+}
+function playerWinsGif() {
+	var playerWinToggle = document.getElementById("playerwins");
+	playerWinToggle.style.display = "block";
+}
+function computerWinsGif() {
+	var computerWinToggle = document.getElementById("computerwins");
+	computerWinToggle.style.display = "block";
 }
 function playAgain() {
 	playerScore = 0;
