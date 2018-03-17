@@ -78,7 +78,6 @@ img {
 	}
 	p.button {
 		font-size: 1.5em;
-		line-height: -10px;
 	}
 	#everything {
 		grid-template: 25% 50% 25% / 1fr;
