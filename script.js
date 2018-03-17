@@ -1,9 +1,12 @@
 function computerPlay() {
 	var possibleMoves = ['paper', 'rock', 'scissors'];
-	return possibleMoves[Math.floor(Math.random()*3)];}
+	return possibleMoves[Math.floor(Math.random()*3)];
+}
 var playerScore = 0;
 var computerScore = 0;
 var gameLog;
+var playerWinToggle = document.getElementById("playerwins");
+var computerWinToggle = document.getElementById("computerwins");
 const displayGameLog = document.querySelector('#gamelog');
 const displayPlayerScore = document.querySelector('#playerscore');
 const displayComputerScore = document.querySelector('#computerscore');
@@ -109,4 +112,6 @@ function playAgain() {
 	toggleButtons();
 	scoreCheck();
 	displayGameLog.textContent = "Choose your weapon...";
+	playerWinToggle.style.display = "none";
+	computerWinToggle.style.display = "none";
 }
