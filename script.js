@@ -28,7 +28,7 @@ scissorsButton.addEventListener('click', () => {
 });
 const playAgainButton = document.querySelector('#playagain');
 playAgainButton.addEventListener('click', () => {
-	onClick = window.location.reload();
+	onClick = playAgain();
 })
 function playRound(playerSelection, computerSelection) {
 	if (playerSelection == computerSelection) {
@@ -92,4 +92,11 @@ function toggleButtons() {
 		playAgainToggle.style.display = "none";
 		controlsToggle.style.display = "inline";
 	}
+}
+function playAgain() {
+	playerScore = 0;
+	computerScore = 0;
+	toggleButtons();
+	scoreCheck();
+	displayGameLog.textContent = "Choose your weapon...";
 }

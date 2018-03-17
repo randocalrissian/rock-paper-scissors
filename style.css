@@ -7,16 +7,20 @@ body {
 }
 button {
 	width: 25%;
+	min-height: 120px;
+	min-width: 80px;
+	display: inline;
 }
 #everything {
 	display: grid;
 	grid-template: 1fr 1fr 1fr / 1fr 4fr 1fr;
 	margin: auto;
 	text-align: center;
+	background-color: blue;
 }
 #gamelogs {
 	grid-column: 2 / span 1;
-	min-height: 180px;
+	min-height: 100px;
 }
 #controls {
 	grid-column: 2 / span 1;
