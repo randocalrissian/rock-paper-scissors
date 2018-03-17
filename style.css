@@ -20,7 +20,8 @@ button:hover {
 }
 h1 {
 	width: 100%;
-	font-size: 2.5em;
+	font-size: 1.5em;
+	display: inline-block;
 }
 p {
 	font-size: 1.5em;
@@ -30,7 +31,7 @@ p.button {
 }
 #everything {
 	display: grid;
-	grid-template: 1fr 1fr 1fr / 1fr 80% 1fr;
+	grid-template: 1fr 1fr 1fr / 1fr 90% 1fr;
 	text-align: center;
 }
 #gamelogs {
