@@ -9,22 +9,24 @@
 <body>
 	<div id="everything">
 	<div id="gamelogs">
-		<h1 id="gamelog">Choose your weapon...</h1>
+		<h1 id="gamelog">Best of 5 wins. Choose your weapon...</h1>
 	</div>
 	<div id="controls">
 		
-		<button id="rock"><p>Rock</p><p><i class="fas fa-3x fa-hand-rock"></i></p></button>
+		<button id="rock"><p class="button left">Rock</p><p class="button right"><i class="fas fa-1x fa-hand-rock"></i></p></button>
 		
-		<button id="paper"><p>Paper</p><p><i class="fas fa-3x fa-hand-paper"></i></p></button>
+		<button id="paper"><p class="button left">Paper</p><p class="button right"><i class="fas fa-1x fa-hand-paper"></i></p></button>
 		
-		<button id="scissors"><p>Scissors</p><p><i class="fas fa-3x fa-hand-scissors"></i></p></button>
+		<button id="scissors"><p class="button left">Scissors</p><p class="button right"><i class="fas fa-1x fa-hand-scissors"></i></p></button>
 	</div>
 	<div id="restart" style="display:none;">
-		<button id="playagain"><p>Play Again</p><p><i class="fas fa-3x fa-play"></i></p></button>
+		<button id="playagain"><p class="button">Play Again</p><p class="button right"><i class="fas fa-1x fa-play"></i></p></button>
 	</div>
 	<div id="scores">
-		<p id="playerscore">Your score: 0</p>
-		<p id="computerscore">Computer score: 0</p>
+		<p>
+			<span id="playerscore">Your score: 0</span> &nbsp;||&nbsp;
+			<span id="computerscore">Computer score: 0</span>
+		</p>
 	</div>
 </div>
 	<script src="script.js"></script>

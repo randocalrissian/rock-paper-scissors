@@ -16,14 +16,18 @@ h1 {
 	width: 100%;
 	font-size: 2.5em;
 }
+p {
+	font-size: 1.5em;
+}
+p.button {
+	font-size: 2em;
+}
 #everything {
 	display: grid;
-	grid-template: 1fr 1fr 1fr / 1fr 8fr 1fr;
-	margin: auto;
+	grid-template: 1fr 1fr 1fr / 1fr 80% 1fr;
 	text-align: center;
 }
 #gamelogs {
-	min-height: 100px;
 	grid-area: 1 / 2 / 1 / 3;
 }
 #controls {
@@ -37,26 +41,40 @@ h1 {
 }
 
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
 	h1 {
-		font-size: 1.25em;
+		font-size: 1.5em;
 	}
 	button {
-		width: 100%;
-		height: 120px;
+		width: 95%;
+		height: 150px;
+	}
+	.button {
+		display: inline;
+		margin: 0;
+	}
+	p.button {
+		font-size: 3em;
+		line-height: -10px;
+	}
+	.right {
+		float: right;
+	}
+	.left {
+		float: left;
 	}
 	#everything {
-		grid-template: 1fr 4fr 3fr / 1fr 1fr 1fr;
+		grid-template: 1fr 4fr 3fr / 1fr;
 	}
 	#gamelogs {
-		min-height: 80px;
-		grid-area: 1 / 1 / 1 / 4;
+		min-height: 100px;
+		grid-area: 1 / 1 / 1 / 2;
 	}
 	#controls {
-	grid-area: 2 / 1 / 2 / 4;
+		grid-area: 2 / 1 / 2 / 2;
 	}
 	#restart {
-		grid-area: 2 / 1 / 2 / 4;
+		grid-area: 2 / 1 / 2 / 2;
 	}
 	#scores {
 		grid-area: 3 / 1 / 3 / 4;
