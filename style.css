@@ -4,25 +4,26 @@ body {
 	margin: 0;
 	padding: 0;
 }
+button {
+	width: 25%;
+}
 #everything {
 	display: grid;
 	grid-template: 1fr 1fr 1fr / 1fr 4fr 1fr;
 	margin: auto;
+	text-align: center;
 }
 #gamelogs {
 	grid-column: 2 / span 1;
 	min-height: 180px;
-	text-align: center;
 }
 #controls {
 	grid-column: 2 / span 1;
-	text-align: center;
 }
 #restart {
 	grid-column: 2 / span 1;
-	text-align: center;
 }
 #scores {
 	grid-column: 2 / span 1;
-	text-align: center;
+
 }
