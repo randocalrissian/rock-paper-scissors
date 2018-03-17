@@ -35,7 +35,7 @@ playAgainButton.addEventListener('click', () => {
 })
 function playRound(playerSelection, computerSelection) {
 	if (playerSelection == computerSelection) {
-		gameLog = "Draw!";
+		gameLog = "You both played " + playerSelection + ". Draw!";
 	} else if (computerSelection == 'rock') {
 		switch(playerSelection) {
 			case 'scissors':
@@ -111,7 +111,7 @@ function playAgain() {
 	computerScore = 0;
 	toggleButtons();
 	scoreCheck();
-	displayGameLog.textContent = "Choose your weapon...";
+	displayGameLog.textContent = "Best of 5 wins. Choose your weapon...";
 	playerWinToggle.style.display = "none";
 	computerWinToggle.style.display = "none";
 }
